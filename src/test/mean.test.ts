@@ -51,6 +51,18 @@ it('should return 6 if numbers are 2, 4, 6, 8, 10', () => {
     expect(result).toBe(expected);
 })
 
+it('should return 6 if numbers are 2, 2', () => {
+    // Arrange
+    const expected = 2;
+    const nums = [2, 2];
+
+    // Act
+    const result = calculateMean(nums);
+
+    // Assert
+    expect(result).toBe(expected);
+})
+
 it('should return zero if array is empty', () => {
     // Arrange
     const expected = 0;
