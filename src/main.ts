@@ -1,3 +1,14 @@
+import { calculateMean } from "./test/mean";
+import { isPalindrome } from "./test/palindrome";
+
+const average = calculateMean([2,4,6,8,10]);
+alert('Mean value for array->[2,4,6,8,10] is: '+average); //it should be 6
+
+const phrase = 'noon';
+const palindrome = isPalindrome(phrase); 
+alert('Its ' + phrase + ' a palindrome? ' + palindrome);
+
+
 // Tipado de Primitivos
 // string, number, boolean
 
@@ -30,7 +41,14 @@
 //     }
 // ];
 
-interface User {
+
+
+
+
+
+//check this example later
+
+/* interface User {
     id: number;
     name: string;
     username: string;
@@ -51,29 +69,4 @@ users.map( user => {
     user.email
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export {};
+export {}; */
